@@ -1,4 +1,4 @@
-# Memento
+# Memento - Undo feature for an editor or moving in history
 
 ## UML
 
@@ -6,4 +6,4 @@
 
 ## Implementation
 
-Stores different editor states history to enable undo feature. 
+This example demonstrates how an editor can save states in history to enable features like undo and moving in history.

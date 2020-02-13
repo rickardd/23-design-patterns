@@ -13,7 +13,7 @@ var Main = /** @class */ (function () {
         editor.setContent("c");
         editor.restore(history.pop());
         editor.restore(history.pop());
-        console.log('OUTPUT', editor.getContent());
+        console.log("OUTPUT", editor.getContent());
     }
     return Main;
 }());
