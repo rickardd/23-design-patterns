@@ -1,4 +1,4 @@
-# State Pattern
+# Pattern Name - what is the implementation
 
 ## UML
 
