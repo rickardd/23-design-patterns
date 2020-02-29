@@ -12,8 +12,12 @@ var Main = /** @class */ (function () {
         history.push(editor.createState());
         editor.setContent("e");
         editor.restore(history.pop());
+<<<<<<< HEAD
         // editor.restore(history.pop())
         console.log('OUTPUT', editor.getContent());
+=======
+        console.log("OUTPUT", editor.getContent());
+>>>>>>> 4d55be1fffaf8c177d9681911e3c01854a093154
     }
     return Main;
 }());
