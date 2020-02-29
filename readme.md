@@ -26,3 +26,7 @@ Run the code editor build task (cmd + shift + b on mac vscode)
 ## Run a pattern
 
 `node folder/dist/main.js`
+
+### Resources
+
+Code examples comes from https://codewithmosh.com/
