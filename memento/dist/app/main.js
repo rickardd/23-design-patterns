@@ -10,10 +10,10 @@ var Main = /** @class */ (function () {
         history.push(editor.createState());
         editor.setContent("b");
         history.push(editor.createState());
-        editor.setContent("e");
+        editor.setContent("c");
         editor.restore(history.pop());
-        // editor.restore(history.pop())
-        console.log('OUTPUT', editor.getContent());
+        editor.restore(history.pop());
+        console.log("OUTPUT", editor.getContent());
     }
     return Main;
 }());
