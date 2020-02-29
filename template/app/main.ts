@@ -1,14 +1,16 @@
 import { TransferMoneyTask } from "./transferMoneyTask";
+import { GenerateReportTask } from "./generate-report-task";
 import { AuditTrail } from "./audit-trail";
 
 class Main {
   constructor() {
-    console.log("INIT MAIN");
+    const auditTrail: AuditTrail = new AuditTrail()
+    const transferMoney = new TransferMoneyTask(auditTrail);
+    const generateReportTask = new GenerateReportTask(auditTrail);
 
-    // const auditTrail : AuditTrail = new AuditTrail()
-
-    const task = new TransferMoneyTask(auditTrail: AuditTrail);
-    task.execute();
+    transferMoney.execute();
+    console.log("-------------")
+    generateReportTask.execute();
   }
 }
 

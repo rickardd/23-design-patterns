@@ -1,15 +1,14 @@
 import { AuditTrail } from "./audit-trail";
+import { Task } from "./task";
 
-export class GenerateReportTask {
-  private auditTrail!: AuditTrail;
+export class GenerateReportTask extends Task {
 
-  public GenerateReportTask(auditTrail: AuditTrail) {
-    this.auditTrail = auditTrail;
+  constructor(auditTrail: AuditTrail) {
+    super(auditTrail);
   }
 
-  public execute(): void {
-    this.auditTrail.record();
-
+  protected doExecute(): void {
     console.log("Generate Report");
   }
+
 }

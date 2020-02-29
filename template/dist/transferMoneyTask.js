@@ -16,12 +16,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var task_1 = require("./task");
 var TransferMoneyTask = /** @class */ (function (_super) {
     __extends(TransferMoneyTask, _super);
-    function TransferMoneyTask() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function TransferMoneyTask(auditTrail) {
+        return _super.call(this, auditTrail) || this;
     }
-    // constructor(auditTrail: AuditTrail) {
-    //   super(auditTrail);
-    // }
     TransferMoneyTask.prototype.doExecute = function () {
         console.log("Transfer Money");
     };
