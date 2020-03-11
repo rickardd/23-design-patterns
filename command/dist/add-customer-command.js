@@ -1,12 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var AddCustomerCommand = /** @class */ (function () {
-    function AddCustomerCommand(service) {
+class AddCustomerCommand {
+    constructor(service) {
         this.service = service;
     }
-    AddCustomerCommand.prototype.execute = function () {
+    execute() {
         this.service.addCustomer();
-    };
-    return AddCustomerCommand;
-}());
+    }
+}
 exports.AddCustomerCommand = AddCustomerCommand;

@@ -1,11 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var BlackAndWhiteCommand = /** @class */ (function () {
-    function BlackAndWhiteCommand() {
-    }
-    BlackAndWhiteCommand.prototype.execute = function () {
+class BlackAndWhiteCommand {
+    execute() {
         console.log("Black and white");
-    };
-    return BlackAndWhiteCommand;
-}());
+    }
+}
 exports.BlackAndWhiteCommand = BlackAndWhiteCommand;

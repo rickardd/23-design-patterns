@@ -1,18 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var History = /** @class */ (function () {
-    function History() {
+class History {
+    constructor() {
         this.commands = [];
     }
-    History.prototype.push = function (command) {
+    push(command) {
         this.commands.push(command);
-    };
-    History.prototype.pop = function () {
+    }
+    pop() {
         return this.commands.pop();
-    };
-    History.prototype.size = function () {
+    }
+    size() {
         return this.commands.length;
-    };
-    return History;
-}());
+    }
+}
 exports.History = History;

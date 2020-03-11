@@ -1,18 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Button = /** @class */ (function () {
-    function Button(command) {
+class Button {
+    constructor(command) {
         this.command = command;
     }
-    Button.prototype.click = function () {
+    click() {
         this.command.execute();
-    };
-    Button.prototype.getLabel = function () {
+    }
+    getLabel() {
         return this.label;
-    };
-    Button.prototype.setLabel = function (label) {
+    }
+    setLabel(label) {
         this.label = label;
-    };
-    return Button;
-}());
+    }
+}
 exports.Button = Button;

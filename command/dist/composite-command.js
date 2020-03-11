@@ -1,15 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var CompositeCommand = /** @class */ (function () {
-    function CompositeCommand() {
+class CompositeCommand {
+    constructor() {
         this.commands = [];
     }
-    CompositeCommand.prototype.add = function (command) {
+    add(command) {
         this.commands.push(command);
-    };
-    CompositeCommand.prototype.execute = function () {
-        this.commands.forEach(function (c) { return c.execute(); });
-    };
-    return CompositeCommand;
-}());
+    }
+    execute() {
+        this.commands.forEach((c) => c.execute());
+    }
+}
 exports.CompositeCommand = CompositeCommand;
